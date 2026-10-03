@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <input type="text" id="vote">
+      <button onclick="done()" id="class">eligible</button>
+      <p id="SUB"></p>
+      
+
+      <script>
+      function done(){
+        var x = document.getElementById("vote").value 
+        if(x>=18){
+            document.getElementById("SUB").innerHTML="I am eligible for vote"
+        }else{
+            document.getElementById("SUB").innerHTML="I am not eligible for vote"
+        }
+          
+          
+      }
+      </script>
+      
+    
+</body>
+</html>

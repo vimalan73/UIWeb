@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="frog"></h1>
+    <h1 id="frog1"></h1>
+    <h1 id="frog2"></h1>
+    <h1 id="frog3"></h1>
+    <h1 id="frog4"></h1>
+    <h1 id="frog5"></h1>
+    <h1 id="frog6"></h1>
+    <h1 id="frog7"></h1>
+    <script>
+        let names = ["naruto", "jirya", "kakashi"];
+        names.push("sasuke");
+        document.getElementById("frog").innerHTML = names;
+
+
+        let powers = ["rasingan", "fireball", "chidori"];
+        powers.pop();
+        document.getElementById("frog1").innerHTML = powers;
+
+
+        let bikes = ["Duke390", "R15V3", "Hayabusa"];
+        bikes.shift();
+        document.getElementById("frog2").innerHTML = bikes;
+
+
+        let Akatsuki = ["itachi", "pain", "khonan"];
+        Akatsuki.unshift("deidara");
+        document.getElementById("frog3").innerHTML = Akatsuki;
+
+
+        let Avengersteam1 = ["thor", "wanda", "hulk"];
+        let Avengersteam2 = ["captain america", "black panther", "natasha"];
+        let Avengersteam3 = ["iron man", "spider man", "captain marvel"]
+        let battle = Avengersteam1.concat(Avengersteam2, Avengersteam3);
+        delete battle[3]
+
+        document.getElementById("frog4").innerHTML = battle;
+
+
+        let numbers = ['1', '2', '3', '4', '5'];
+        let value = numbers.splice(2, 3,'6');
+        document.getElementById("frog5").innerHTML = value;
+
+
+        let numbers1 = ['1', '2', '3', '4', '5'];
+        let value1 = numbers1.slice(2, 3);
+        document.getElementById("frog6").innerHTML = value1;
+
+        let student= {
+            name : "vimalan",
+            age : 21,
+            course : "java",
+            performance : "excellent"
+            
+        };
+        let result = '<li>'+student.name+'</li>'+'<li>'+student.age+'</li>'+'<li>'+student.course+'</li>'+'<li>'+student.performance+'</li>'
+         
+        document.getElementById("frog7").innerHTML=result;
+
+
+       
+
+
+
+    </script>
+</body>
+
+</html>

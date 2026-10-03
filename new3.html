@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="one" onclick="sample()">hello</button>
+    <div id="hai"></div>
+    <script>
+        function sample(){
+            var x=5
+            var text;
+            switch(x){
+                case 5:
+                text = " i am go to work";
+                break;
+                case 10:
+                text = " i am not going to work"
+                break;
+            }
+            document.getElementById("hai").innerHTML=text;
+        }
+    </script>
+    
+</body>
+</html>

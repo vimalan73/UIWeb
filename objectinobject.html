@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="indendity"></h1>
+    <script>
+        let main = {
+            name : "vimalan",
+            age : '21',
+
+            education:{
+                BE : "completed",
+                ME : "bending",
+              
+                 job:{
+                    Firstjob : "production",
+                    Currentjob : "IT"
+            }
+           
+
+            }
+
+        };
+        let result = '<li>'+main.name+'</li>'+'<li>'+main.education.BE+'</li>'+'<li>'+main.education.job.Currentjob+'</li>'
+        document.getElementById("idendity").innerHTML=result;
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+div{
+    width: 200px;height: 200px;
+     background-image: url(image/IMG_20250809_181004.jpg); 
+}
+#AlienX{
+    width: 400px;
+    height: 400px;
+    border: 3px solid transparent;
+    border-image: url("image/Screenshot 2026-04-21 125333.png")30% round;
+}
+    
+    

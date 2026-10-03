@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id = "one" type="text">
+    <button id="goten" onclick="sample()">click</button>
+    <div id="three"></div>
+
+    <script>
+        function sample() {
+            var x = document.getElementById("one").value;
+            var y;
+            switch (x) {
+                case "10":
+                    y = " iam a baby "
+                    break;
+                case "20":
+                    y = " iam an adult "
+                    break;
+                case "60":
+                    y = " iam an older "
+                    break;
+            }
+            document.getElementById("three").innerHTML = y;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
